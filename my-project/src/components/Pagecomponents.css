@@ -1,0 +1,29 @@
+.custom-shadow {
+  display: inline-block;
+  filter: drop-shadow(
+    0 10px 15px rgba(115, 255, 115, 0.6)
+  ); 
+  /* Creates the shadow effect around the image */
+}
+
+.user-image {
+  width: auto; /* Maintains aspect ratio */
+  height: 350px; /* Adjust height as needed */
+  object-fit: contain; /* Ensures the image fits inside its container */
+   border-radius:20%; /* Rounds the corners of the image */
+}
+#react{
+  -webkit-animation-name:spin;
+  -webkit-animation-duration:4000ms;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+
+}
+@keyframes spin{
+  from{
+    -webkit-transform:rotate(0deg);
+  }
+  to{
+    -webkit-transform:rotate(360deg);
+  }
+}
